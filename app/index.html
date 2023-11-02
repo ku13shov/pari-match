@@ -5,14 +5,357 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.min.css">
 
     <script defer src="js/main.min.js"></script>
-    <title>Title</title>
+    <title>PariMatch</title>
 </head>
 
 <body>
 
+    <section class="game">
+        <div class="container">
+            <div class="game__wrapper">
+                <div class="game__descr">
+                    <div class="game__descr-box">
+                        <div class="game__descr-logo">
+                            <img src="images/logo.png" alt="pari match logo">
+                        </div>
+
+                        <div class="game__descr-info">
+                            <h2 class="game__descr-title">
+                                PariMatch
+                            </h2>
+
+                            <div class="game__descr-rating">
+                                <span>5.0</span>
+
+                                <div class="game__descr-stars">
+                                    <svg id="star" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.5833 7.15416C15.6542 6.8 15.3708 6.375 15.0167 6.375L10.9792 5.80833L9.13749 2.125C9.06666 1.98333 8.99582 1.9125 8.85416 1.84166C8.49999 1.62916 8.07499 1.77083 7.86249 2.125L6.09166 5.80833L2.05416 6.375C1.84166 6.375 1.69999 6.44583 1.62916 6.5875C1.34582 6.87083 1.34582 7.29583 1.62916 7.57916L4.53332 10.4125L3.82499 14.45C3.82499 14.5917 3.82499 14.7333 3.89582 14.875C4.10832 15.2292 4.53332 15.3708 4.88749 15.1583L8.49999 13.2458L12.1125 15.1583C12.1833 15.2292 12.325 15.2292 12.4667 15.2292C12.5375 15.2292 12.5375 15.2292 12.6083 15.2292C12.9625 15.1583 13.2458 14.8042 13.175 14.3792L12.4667 10.3417L15.3708 7.50833C15.5125 7.4375 15.5833 7.29583 15.5833 7.15416Z"
+                                            fill="#FF922E" />
+                                    </svg>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="game__descr-text">
+                                Beting/Casino/Live Games/Fast Game
+                            </p>
+
+                            <div class="game__descr-systems">
+                                <div class="game__descr-sys win">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.3975 3.71065C10.3009 3.72665 10.2301 3.81012 10.2301 3.90796V9.18096C10.2301 9.29142 10.3197 9.38096 10.4302 9.38096H17.4911C17.6015 9.38096 17.6911 9.29142 17.6911 9.18096V2.73791C17.6911 2.6144 17.5802 2.52041 17.4584 2.5406L10.3975 3.71065ZM10.2301 16.1113C10.2301 16.2093 10.3012 16.2929 10.398 16.3087L17.4589 17.4584C17.5806 17.4782 17.6911 17.3843 17.6911 17.261V10.8212C17.6911 10.7107 17.6015 10.6212 17.4911 10.6212H10.4301C10.3197 10.6212 10.2301 10.7107 10.2301 10.8212V16.1113ZM2.3454 9.17901C2.3454 9.28947 2.43494 9.37901 2.5454 9.37901H8.45203C8.56248 9.37901 8.65203 9.28947 8.65203 9.17901V4.17932C8.65203 4.05581 8.54119 3.96182 8.41934 3.98201L2.51271 4.96066C2.41618 4.97665 2.3454 5.06013 2.3454 5.15797V9.17901ZM2.3454 14.8808C2.3454 14.9789 2.41647 15.0625 2.51324 15.0782L8.41987 16.0404C8.54156 16.0602 8.65203 15.9663 8.65203 15.843V10.8212C8.65203 10.7107 8.56248 10.6212 8.45203 10.6212H2.5454C2.43494 10.6212 2.3454 10.7107 2.3454 10.8212V14.8808Z"
+                                            fill="white" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M13.3882 7.49565C13.6323 7.25158 13.6323 6.85585 13.3882 6.61177C13.1441 6.36769 12.7484 6.36769 12.5043 6.61177L9.99999 9.1161L7.49566 6.61177C7.25158 6.36769 6.85585 6.36769 6.61178 6.61177C6.3677 6.85585 6.3677 7.25158 6.61178 7.49565L9.11611 9.99999L6.61177 12.5043C6.36769 12.7484 6.36769 13.1441 6.61177 13.3882C6.85585 13.6323 7.25158 13.6323 7.49565 13.3882L9.99999 10.8839L12.5043 13.3882C12.7484 13.6323 13.1441 13.6323 13.3882 13.3882C13.6323 13.1441 13.6323 12.7484 13.3882 12.5043L10.8839 9.99999L13.3882 7.49565Z"
+                                            fill="#FF4C34" />
+                                    </svg>
+                                </div>
+
+                                <div class="game__descr-sys android">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.84703 1.37204C6.00975 1.20932 6.27357 1.20932 6.43629 1.37204L7.35772 2.29347C8.04881 1.89478 8.85071 1.66667 9.70588 1.66667H10.2941C11.15 1.66667 11.9525 1.89515 12.644 2.29444L13.5664 1.37204C13.7291 1.20932 13.9929 1.20932 14.1556 1.37204C14.3183 1.53476 14.3183 1.79858 14.1556 1.96129L13.3355 2.78141C14.3537 3.64462 15 4.93311 15 6.37255C15 6.53499 14.8683 6.66667 14.7059 6.66667H5.29412C5.13168 6.66667 5 6.53499 5 6.37255C5 4.93243 5.64689 3.64341 6.66594 2.7802L5.84703 1.96129C5.68432 1.79858 5.68432 1.53476 5.84703 1.37204ZM8.75 4.375C8.75 4.72018 8.47018 5 8.125 5C7.77982 5 7.5 4.72018 7.5 4.375C7.5 4.02982 7.77982 3.75 8.125 3.75C8.47018 3.75 8.75 4.02982 8.75 4.375ZM11.8531 5C12.1983 5 12.4781 4.72018 12.4781 4.375C12.4781 4.02982 12.1983 3.75 11.8531 3.75C11.5079 3.75 11.2281 4.02982 11.2281 4.375C11.2281 4.72018 11.5079 5 11.8531 5Z"
+                                            fill="white" />
+                                        <path
+                                            d="M3.33333 7.45613C2.8731 7.45613 2.5 7.82923 2.5 8.28946V13.2895C2.5 13.7497 2.8731 14.1228 3.33333 14.1228C3.79357 14.1228 4.16667 13.7497 4.16667 13.2895V8.28946C4.16667 7.82923 3.79357 7.45613 3.33333 7.45613Z"
+                                            fill="white" />
+                                        <path
+                                            d="M5.83333 7.45613C5.3731 7.45613 5 7.82923 5 8.28946V15.7895C5 16.2497 5.3731 16.6228 5.83333 16.6228H14.1667C14.6269 16.6228 15 16.2497 15 15.7895V8.28946C15 7.82923 14.6269 7.45613 14.1667 7.45613H5.83333Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16.0088 8.28946C16.0088 7.82923 16.3819 7.45613 16.8421 7.45613C17.3023 7.45613 17.6754 7.82923 17.6754 8.28946V13.2895C17.6754 13.7497 17.3023 14.1228 16.8421 14.1228C16.3819 14.1228 16.0088 13.7497 16.0088 13.2895V8.28946Z"
+                                            fill="white" />
+                                        <path
+                                            d="M6.49457 17.5C6.3595 17.5 6.25 17.6095 6.25 17.7446V17.9167C6.25 18.7221 6.90292 19.375 7.70833 19.375C8.51375 19.375 9.16667 18.7221 9.16667 17.9167V17.7446C9.16667 17.6095 9.05717 17.5 8.9221 17.5H6.49457Z"
+                                            fill="white" />
+                                        <path
+                                            d="M10.8333 17.7446C10.8333 17.6095 10.9428 17.5 11.0779 17.5H13.5054C13.6405 17.5 13.75 17.6095 13.75 17.7446V17.9167C13.75 18.7221 13.0971 19.375 12.2917 19.375C11.4863 19.375 10.8333 18.7221 10.8333 17.9167V17.7446Z"
+                                            fill="white" />
+                                    </svg>
+                                    <svg id="check" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.0253 6.6414C15.2694 6.88548 15.2694 7.28121 15.0253 7.52529L9.19196 13.3586C8.94789 13.6027 8.55216 13.6027 8.30808 13.3586L4.97475 10.0253C4.73067 9.78121 4.73067 9.38548 4.97475 9.1414C5.21882 8.89732 5.61455 8.89732 5.85863 9.1414L8.75002 12.0328L14.1414 6.6414C14.3855 6.39732 14.7812 6.39732 15.0253 6.6414Z"
+                                            fill="#53AF1B" />
+                                    </svg>
+                                </div>
+
+                                <div class="game__descr-sys apple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M9.75252 4.67969C9.77681 3.926 9.98441 2.81572 10.7069 2.08632C11.3776 1.40925 12.194 1.07927 12.7025 0.928409C12.8988 0.870169 13.0872 1.0182 13.0775 1.22275C13.0435 1.94425 12.8537 3.0204 12.3643 3.59692C11.9028 4.14039 11.1606 4.86107 10.0733 4.98232C9.89535 5.00217 9.74675 4.85866 9.75252 4.67969Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.6142 18.4746C12.1363 18.6746 12.6642 18.8768 13.1419 18.8768C14.1639 18.8768 17.1398 16.5189 17.247 14.0699C17.2525 13.9441 17.1774 13.8317 17.0675 13.7703C16.3106 13.3467 15.0744 12.2919 15.0314 10.7575C14.9813 8.96929 15.8791 7.54898 16.5586 6.96146C16.7116 6.82923 16.7641 6.59608 16.6276 6.44698C16.0093 5.77181 14.7655 4.84309 13.6307 4.86589C12.8051 4.88248 12.0612 5.19002 11.4229 5.45392C10.9332 5.65639 10.5056 5.83317 10.1508 5.83317C9.81486 5.83317 9.41152 5.65752 8.94859 5.45593C8.32516 5.18444 7.59367 4.86589 6.77311 4.86589C5.25316 4.86589 2.25001 6.12629 2.25 10.992C2.25 13.5714 4.9128 18.9452 7.15976 18.8768C7.64495 18.8768 8.16348 18.6759 8.67802 18.4765C9.18471 18.2802 9.68753 18.0854 10.1508 18.0854C10.5982 18.0854 11.1034 18.2789 11.6142 18.4746Z"
+                                            fill="white" />
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game__bonus">
+                        <div class="game__bonus-img">
+                            <img src="images/bonus.png" alt="bonus">
+                        </div>
+
+                        <p class="game__bonus-subtext">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.4271 3.89583C4.4271 2.62443 5.45778 1.59375 6.72919 1.59375C7.44122 1.59375 8.07775 1.91701 8.50002 2.42478C8.9223 1.91701 9.55882 1.59375 10.2709 1.59375C11.5423 1.59375 12.5729 2.62443 12.5729 3.89583C12.5729 4.4301 12.3909 4.92187 12.0855 5.3125H12.75C13.728 5.3125 14.5209 6.10533 14.5209 7.08333V7.96875C14.5209 8.26215 14.283 8.5 13.9896 8.5H9.24377C9.12641 8.5 9.03127 8.40486 9.03127 8.2875V5.83602C8.83085 5.70771 8.65163 5.54919 8.50002 5.36689C8.34842 5.54919 8.16919 5.70771 7.96877 5.83602V8.2875C7.96877 8.40486 7.87363 8.5 7.75627 8.5H3.01044C2.71704 8.5 2.47919 8.26215 2.47919 7.96875V7.08333C2.47919 6.10533 3.27202 5.3125 4.25002 5.3125H4.91449C4.60911 4.92187 4.4271 4.4301 4.4271 3.89583ZM7.96877 3.89583C7.96877 3.21123 7.41379 2.65625 6.72919 2.65625C6.04458 2.65625 5.4896 3.21123 5.4896 3.89583C5.4896 4.58044 6.04458 5.13542 6.72919 5.13542C7.41379 5.13542 7.96877 4.58044 7.96877 3.89583ZM9.03127 3.89583C9.03127 4.58044 9.58625 5.13542 10.2709 5.13542C10.9555 5.13542 11.5104 4.58044 11.5104 3.89583C11.5104 3.21123 10.9555 2.65625 10.2709 2.65625C9.58625 2.65625 9.03127 3.21123 9.03127 3.89583Z"
+                                    fill="url(#paint0_linear_1_8442)" />
+                                <path
+                                    d="M7.96877 9.66875C7.96877 9.55139 7.87363 9.45625 7.75627 9.45625H4.00141C3.71407 9.45625 3.46853 9.66329 3.42 9.9465C3.26272 10.8644 3.26272 11.8023 3.42 12.7202L3.57889 13.6474C3.68587 14.2717 4.19293 14.75 4.82244 14.8204L5.5769 14.9047C6.30005 14.9855 7.0257 15.0362 7.752 15.0569C7.87099 15.0603 7.96877 14.9644 7.96877 14.8453L7.96877 9.66875Z"
+                                    fill="url(#paint1_linear_1_8442)" />
+                                <path
+                                    d="M9.24804 15.0569C9.12905 15.0603 9.03127 14.9644 9.03127 14.8453L9.03127 9.66875C9.03127 9.55139 9.12641 9.45625 9.24377 9.45625H12.9986C13.286 9.45625 13.5315 9.66329 13.58 9.9465C13.7373 10.8644 13.7373 11.8023 13.58 12.7202L13.4211 13.6474C13.3142 14.2717 12.8071 14.75 12.1776 14.8204L11.4231 14.9047C10.7 14.9855 9.97434 15.0362 9.24804 15.0569Z"
+                                    fill="url(#paint2_linear_1_8442)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_8442" x1="8.50002" y1="1.59375" x2="8.50002"
+                                        y2="15.057" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9900" />
+                                        <stop offset="1" stop-color="#FF630C" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_1_8442" x1="8.50002" y1="1.59375" x2="8.50002"
+                                        y2="15.057" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9900" />
+                                        <stop offset="1" stop-color="#FF630C" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_1_8442" x1="8.50002" y1="1.59375" x2="8.50002"
+                                        y2="15.057" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9900" />
+                                        <stop offset="1" stop-color="#FF630C" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
+                            <span>Welcome bonus</span>
+                        </p>
+
+                        <h3 class="game__bonus-title">
+                            100% Up to 500 $
+                        </h3>
+
+                        <p class="game__bonus-text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit lacus tempor quis volutpat integer
+                            lacinia montes nisl, class quisque leo consequat sed lobortis.
+                        </p>
+
+                        <button class="game__bonus-claim" href="#">
+                            Claim bonus
+                        </button>
+                    </div>
+
+                    <div class="game__descr-items">
+                        <div class="game__descr-container">
+                            <div class="game__descr-item">
+                                Lorem ipsum dolor sit consectetur
+                            </div>
+                            <div class="game__descr-item">
+                                Lorem ipsum dolor sit consectetur
+                            </div>
+                            <div class="game__descr-item">
+                                Lorem ipsum dolor sit consectetur
+                            </div>
+                        </div>
+
+                        <div class="game__descr-container">
+                            <div class="game__descr-item">
+                                Lorem ipsum dolor sit consectetur
+                            </div>
+                            <div class="game__descr-item">
+                                Lorem ipsum dolor sit consectetur
+                            </div>
+                            <div class="game__descr-item">
+                                Lorem ipsum dolor sit consectetur
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game__descr-banks">
+                        <div class="game__descr-bank">
+                            <img src="images/mastercard.svg" alt="mastercard">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/discover.svg" alt="discover">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/american-express.svg" alt="american express">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/maestro.svg" alt="maestro">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/union.svg" alt="union">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/mastercard.svg" alt="mastercard">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/discover.svg" alt="discover">
+                        </div>
+                        <div class="game__descr-bank">
+                            <img src="images/american-express.svg" alt="american express">
+                        </div>
+                        <div class="game__descr-bank hidden">
+                            <img src="images/maestro.svg" alt="maestro">
+                        </div>
+                        <div class="game__descr-bank hidden">
+                            <img src="images/union.svg" alt="union">
+                        </div>
+                        <div class="game__descr-bank hidden">
+                            <img src="images/mastercard.svg" alt="mastercard">
+                        </div>
+                        <div class="game__descr-bank hidden">
+                            <img src="images/discover.svg" alt="discover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game__info">
+                    <div class="game__info-items">
+                        <div class="game__info-item">
+                            <div class="game__info-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                    fill="none">
+                                    <path
+                                        d="M7.42709 3.83334C7.42709 3.43639 7.1053 3.11459 6.70834 3.11459C6.31139 3.11459 5.98959 3.43639 5.98959 3.83334V5.57409C4.55873 5.77638 3.42833 6.90811 3.23697 8.35173L3.15402 8.97748C3.13996 9.08357 3.12652 9.18971 3.11368 9.29592C3.07965 9.57764 3.3016 9.82293 3.58537 9.82293H19.4146C19.6984 9.82293 19.9203 9.57764 19.8863 9.29592C19.8734 9.18971 19.86 9.08356 19.8459 8.97747L19.763 8.35173C19.5716 6.90813 18.4413 5.77641 17.0104 5.57409V3.83334C17.0104 3.43639 16.6886 3.11459 16.2917 3.11459C15.8947 3.11459 15.5729 3.43639 15.5729 3.83334V5.43149C12.863 5.19016 10.137 5.19015 7.42709 5.43149V3.83334Z"
+                                        fill="#0079F0" />
+                                    <path
+                                        d="M20.0719 11.7162C20.0635 11.4608 19.8525 11.2604 19.597 11.2604H3.40292C3.14746 11.2604 2.93646 11.4608 2.92807 11.7162C2.87115 13.4485 2.97638 15.1844 3.2435 16.901C3.44572 18.2006 4.50147 19.1987 5.81031 19.3278L6.9536 19.4406C9.97719 19.7387 13.0228 19.7387 16.0464 19.4406L17.1897 19.3278C18.4985 19.1987 19.5542 18.2006 19.7565 16.901C20.0236 15.1844 20.1288 13.4485 20.0719 11.7162Z"
+                                        fill="#0079F0" />
+                                </svg>
+
+                                <div class="game__info-text bold">Foundation</div>
+                            </div>
+                            <div class="game__info-text">1994</div>
+                        </div>
+
+                        <div class="game__info-item">
+                            <div class="game__info-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                    fill="none">
+                                    <path
+                                        d="M12.6123 4.22343C11.928 3.81139 11.072 3.81139 10.3877 4.22343L9.89295 4.52137C8.6924 5.24428 7.34462 5.68788 5.94941 5.81933L5.63768 5.8487C5.02234 5.90667 4.55212 6.42327 4.55212 7.04134V8.61673C4.55212 11.2796 5.63321 13.8283 7.54772 15.6791L10.6674 18.695C11.1318 19.1439 11.8683 19.1439 12.3326 18.695L15.4524 15.6791C17.3669 13.8283 18.448 11.2796 18.448 8.61673V7.04134C18.448 6.42327 17.9777 5.90667 17.3624 5.8487L17.0507 5.81933C15.6555 5.68788 14.3077 5.24428 13.1071 4.52137L12.6123 4.22343Z"
+                                        fill="#0079F0" />
+                                </svg>
+
+                                <div class="game__info-text bold">Licensed</div>
+                            </div>
+                            <div class="game__info-text">Curaso GLH-OCCHKTW0706292016</div>
+                        </div>
+
+                        <div class="game__info-item">
+                            <div class="game__info-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.969 10.5417L17.963 10.7748L17.969 11.0209L17.9633 11.2556L17.9689 11.5001L17.7881 19.4094C17.7656 20.3937 17.017 21.2089 16.0381 21.3149C13.0215 21.6416 9.97844 21.6416 6.96183 21.3149C5.98299 21.2089 5.23435 20.3937 5.21185 19.4094L5.03104 11.5001L5.03666 11.254L5.03105 11.0209L5.03695 10.7758L5.03101 10.5417L5.19268 4.177C5.19375 4.13494 5.19578 4.0931 5.19877 4.05152L5.20943 3.60861C5.23379 2.59593 6.00724 1.75929 7.01489 1.65562C7.09875 1.647 7.18263 1.63861 7.26653 1.63047C7.38031 1.60402 7.49699 1.58474 7.61608 1.57313C10.1992 1.32137 12.8007 1.32137 15.3839 1.57313C15.503 1.58474 15.6196 1.60402 15.7334 1.63046C15.8173 1.63861 15.9012 1.64699 15.9851 1.65562C16.9928 1.75929 17.7662 2.59593 17.7906 3.60861L17.8013 4.05253C17.8042 4.09378 17.8062 4.13528 17.8073 4.177L17.969 10.5417ZM15.3333 17.0104C15.7303 17.0104 16.0521 16.6886 16.0521 16.2917C16.0521 15.8947 15.7303 15.5729 15.3333 15.5729H7.66666C7.2697 15.5729 6.94791 15.8947 6.94791 16.2917C6.94791 16.6886 7.2697 17.0104 7.66666 17.0104H15.3333ZM11.5 20.7959C12.2939 20.7959 12.9375 20.1523 12.9375 19.3584C12.9375 18.5645 12.2939 17.9209 11.5 17.9209C10.7061 17.9209 10.0625 18.5645 10.0625 19.3584C10.0625 20.1523 10.7061 20.7959 11.5 20.7959Z"
+                                        fill="#0079F0" />
+                                </svg>
+
+                                <div class="game__info-text bold">Apps</div>
+                            </div>
+                            <div class="game__info-text">IOS, Android, Windows</div>
+                        </div>
+
+                        <div class="game__info-item">
+                            <div class="game__info-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                    fill="none">
+                                    <path
+                                        d="M8.38542 9.58333C8.38542 7.8632 9.77986 6.46875 11.5 6.46875C13.2201 6.46875 14.6146 7.8632 14.6146 9.58333C14.6146 11.3035 13.2201 12.6979 11.5 12.6979C9.77986 12.6979 8.38542 11.3035 8.38542 9.58333Z"
+                                        fill="#0079F0" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.61631 8.5075C3.94563 4.51226 7.28427 1.4375 11.2931 1.4375H11.707C15.7158 1.4375 19.0544 4.51226 19.3837 8.5075C19.561 10.6586 18.8966 12.7945 17.5303 14.4654L12.937 20.0829C12.1943 20.9912 10.8057 20.9912 10.0631 20.0829L5.46971 14.4654C4.10346 12.7945 3.439 10.6586 3.61631 8.5075ZM11.5 5.03125C8.98595 5.03125 6.94792 7.06929 6.94792 9.58333C6.94792 12.0974 8.98595 14.1354 11.5 14.1354C14.014 14.1354 16.0521 12.0974 16.0521 9.58333C16.0521 7.06929 14.014 5.03125 11.5 5.03125Z"
+                                        fill="#0079F0" />
+                                </svg>
+
+                                <div class="game__info-text bold">Country</div>
+                            </div>
+                            <div class="game__info-text">Europe, Russia, North American</div>
+                        </div>
+
+                        <div class="game__info-item">
+                            <div class="game__info-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.78284 4.79167C3.78284 3.99776 4.42643 3.35417 5.22034 3.35417H17.6787C18.4726 3.35417 19.1162 3.99776 19.1162 4.79167V8.62501C19.1162 9.41891 18.4726 10.0625 17.6787 10.0625H5.22034C4.42643 10.0625 3.78284 9.41891 3.78284 8.62501V4.79167ZM5.74995 6.70834C5.74995 6.17907 6.17901 5.75001 6.70829 5.75001C7.23756 5.75001 7.66662 6.17907 7.66662 6.70834C7.66662 7.23761 7.23756 7.66667 6.70829 7.66667C6.17901 7.66667 5.74995 7.23761 5.74995 6.70834ZM9.58329 5.75001C9.05401 5.75001 8.62495 6.17907 8.62495 6.70834C8.62495 7.23761 9.05401 7.66667 9.58329 7.66667C10.1126 7.66667 10.5416 7.23761 10.5416 6.70834C10.5416 6.17907 10.1126 5.75001 9.58329 5.75001Z"
+                                        fill="#0079F0" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.78284 12.4583C3.78284 11.6644 4.42643 11.0208 5.22034 11.0208H17.6787C18.4726 11.0208 19.1162 11.6644 19.1162 12.4583V16.2917C19.1162 17.0856 18.4726 17.7292 17.6787 17.7292H12.2187V19.4063H18.2083C18.6052 19.4063 18.927 19.7281 18.927 20.125C18.927 20.522 18.6052 20.8438 18.2083 20.8438H4.79162C4.39467 20.8438 4.07287 20.522 4.07287 20.125C4.07287 19.7281 4.39467 19.4063 4.79162 19.4063H10.7812V17.7292H5.22034C4.42643 17.7292 3.78284 17.0856 3.78284 16.2917V12.4583ZM5.74995 14.375C5.74995 13.8457 6.17901 13.4167 6.70829 13.4167C7.23756 13.4167 7.66662 13.8457 7.66662 14.375C7.66662 14.9043 7.23756 15.3333 6.70829 15.3333C6.17901 15.3333 5.74995 14.9043 5.74995 14.375ZM8.62495 14.375C8.62495 13.8457 9.05401 13.4167 9.58329 13.4167C10.1126 13.4167 10.5416 13.8457 10.5416 14.375C10.5416 14.9043 10.1126 15.3333 9.58329 15.3333C9.05401 15.3333 8.62495 14.9043 8.62495 14.375Z"
+                                        fill="#0079F0" />
+                                </svg>
+
+                                <div class="game__info-text bold">Apps</div>
+                            </div>
+                            <div class="game__info-text">IOS, Android, Windows</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game__comment">
+                <div class="game__author">
+                    <div class="game__author-icon">
+                        <img src="images/author.png" alt="author">
+                    </div>
+
+                    <div class="game__author-box">
+                        <div class="game__author-title">
+                            Parimatch
+                        </div>
+                        <div class="game__author-text">
+                            Commnet from Author
+                        </div>
+                    </div>
+                </div>
+
+                <p class="game__comment-text">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit lacus tempor quis volutpat integer lacinia
+                    montes nisl, class quisque leo consequat sed lobortis proin suscipit vulputate id fames pulvinar
+                    curabitur faucibus. Lorem ipsum dolor sit amet consectetur adipiscing elit lacus tempor quis
+                    volutpat integer lacinia montes nisl, class quisque leo consequat sed lobortis proin suscipit
+                    vulputate id fames pulvinar curabitur faucibus. Lorem ipsum dolor sit amet consectetur adipiscing
+                    elit lacus tempor quis volutpat integer lacinia montes nisl, class quisque leo consequat sed
+                    lobortis proin suscipit vulputate id fames pulvinar curabitur faucibus.
+                </p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
