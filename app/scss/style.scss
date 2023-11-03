@@ -58,6 +58,7 @@ body {
 
 .game {
     padding-top: 16px;
+    padding-bottom: 16px;
 
     &__wrapper {
         display: flex;
@@ -194,7 +195,6 @@ body {
 
     &__bonus {
         position: absolute;
-        padding: 0 20px 20px 20px;
         max-width: 329px;
         width: 100%;
         top: 0;
@@ -204,6 +204,10 @@ body {
 
         &-img {
             margin-bottom: 16px;
+        }
+
+        &-box {
+            padding: 0 20px 20px 20px;
         }
 
         &-subtext {
@@ -266,16 +270,17 @@ body {
         padding: 20px;
 
         &-item {
+            position: relative;
+            padding-left: 33px;
+
+            svg {
+                position: absolute;
+                left: 0;
+            }
         }
 
         &-item + &-item {
             margin-top: 20px;
-        }
-
-        &-box {
-            display: flex;
-            gap: 10px;
-            align-items: center;
         }
 
         &-text {
@@ -284,7 +289,6 @@ body {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            padding-left: 33px;
 
             &.bold {
                 font-weight: 500;
@@ -329,6 +333,315 @@ body {
         &-text {
             font-size: 12px;
             font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .game {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__info {
+            max-width: 991px;
+        }
+
+        &__comment {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .game {
+        &__descr,
+        &__info,
+        &__comment {
+            max-width: 662px;
+        }
+
+        &__descr-info {
+            max-width: 100%;
+        }
+
+        &__descr-systems {
+            right: 0;
+        }
+
+        &__bonus {
+            position: static;
+            max-width: 100%;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        &__bonus-img {
+            display: none;
+        }
+
+        &__bonus-box {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .game {
+        &__wrapper {
+            margin-bottom: 10px;
+        }
+
+        &__descr {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        &__descr-logo {
+            max-width: 119px;
+            height: 95px;
+
+            img {
+                width: 89px;
+            }
+        }
+
+        &__descr-box {
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        &__descr-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__descr-title {
+            font-size: 16px;
+            order: 0;
+        }
+
+        &__descr-rating {
+            order: 2;
+        }
+
+        &__descr-text {
+            order: 1;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+
+        &__descr-systems {
+            position: static;
+            order: 3;
+            gap: 15px;
+        }
+
+        &__descr-sys {
+            gap: 5px;
+
+            svg {
+                width: 17px;
+                height: 17px;
+            }
+
+            &.apple {
+                order: 0;
+            }
+
+            &.android {
+                order: 1;
+            }
+
+            &.win {
+                order: 2;
+            }
+        }
+
+        &__bonus {
+            padding: 9px;
+            border: 1px solid rgba(122, 126, 155, 0.2);
+            background: linear-gradient(134deg, #313446 -11.18%, #070b1f 110.94%), #f7f8fd;
+            margin-bottom: 20px;
+        }
+
+        &__bonus-subtext {
+            font-size: 12px;
+
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        &__bonus-title {
+            font-size: 18px;
+        }
+
+        &__bonus-text {
+            margin-bottom: 14px;
+        }
+
+        &__bonus-claim {
+            font-size: 12px;
+            height: 44px;
+        }
+
+        &__descr-items {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        &__descr-item {
+            font-size: 12px;
+            padding-left: 24px;
+
+            &::before {
+                height: 14px;
+                width: 14px;
+            }
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        &__descr-banks {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        &__descr-bank {
+            &.hidden {
+                display: block;
+            }
+        }
+
+        &__info {
+            padding: 10px;
+        }
+
+        &__info-item {
+            padding-left: 41px;
+
+            svg {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 31px;
+                height: 31px;
+            }
+        }
+
+        &__info-text.bold {
+            font-size: 12px;
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+
+        &__comment {
+            padding: 10px;
+        }
+
+        &__author-title {
+            font-size: 14px;
+        }
+
+        &__author-text {
+            font-size: 10px;
+        }
+
+        &__comment-text {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .game {
+        &__wrapper {
+            gap: 10px;
+        }
+
+        &__descr-logo {
+            max-width: 75px;
+            height: 75px;
+            border-radius: 10px;
+
+            img {
+                width: 52px;
+            }
+        }
+
+        &__descr-box {
+            position: relative;
+            margin: 0;
+            padding-bottom: 39px;
+        }
+
+        &__descr-info {
+            position: static;
+        }
+
+        &__descr-title {
+            font-size: 14px;
+            padding-top: 6px;
+        }
+
+        &__descr-text {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        &__descr-systems {
+            position: absolute;
+            left: 0;
+            right: auto;
+            bottom: -73px;
+        }
+
+        &__bonus {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        &__bonus-text {
+            line-height: 17px;
+        }
+
+        &__descr-items {
+            margin-bottom: 14px;
+        }
+
+        &__descr-banks {
+            gap: 4px;
+        }
+
+        &__info-item {
+            padding-left: 37px;
+
+            svg {
+                width: 27px;
+                height: 27px;
+            }
+        }
+
+        &__info-item + &__info-item {
+            margin-top: 15px;
+        }
+
+        &__info-text.bold {
+            font-size: 10px;
+        }
+
+        &__info-text {
+            font-size: 13px;
+        }
+
+        &__comment-text {
+            line-height: 17px;
         }
     }
 }
